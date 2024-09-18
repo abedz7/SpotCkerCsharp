@@ -11,7 +11,7 @@ const LogIn = ({ navigation }) => {
     setLoading(true);
     try {
       // First authenticate the user
-      const loginResponse = await fetch('https://spotcker.onrender.com/api/Users/authenticateUser', {
+      const loginResponse = await fetch('https://spotseeker8.bsite.net/api/user', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -26,7 +26,7 @@ const LogIn = ({ navigation }) => {
       
       if (loginResponse.ok) {
         // If authentication is successful, fetch the user data by email
-        const userResponse = await fetch(`https://spotcker.onrender.com/api/Users/getUserByEmail/${email.toLowerCase()}`, {
+        const userResponse = await fetch(fetch('https://spotseeker8.bsite.net/api/user'), {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',

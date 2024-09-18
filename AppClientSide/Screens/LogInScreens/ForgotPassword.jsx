@@ -9,7 +9,7 @@ const ForgotPassword = ({ navigation }) => {
     const handleForgotPassword = async () => {
         setLoading(true);  
         try {
-            const response = await fetch('https://spotcker.onrender.com/api/Users/forgotPassword', {
+            const response = await fetch('https://spotseeker8.bsite.net/api/user', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
